@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Simulator Terbang Quadcopter 3D</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/pyodide/v0.26.4/full/pyodide.js"></script>
+</head>
+<body>
+<div id="stage">
+  <canvas id="cv" tabindex="0" aria-label="Simulator quadcopter 3D"></canvas>
+  <div class="p" id="hud"></div>
+  <div class="p" id="keys">
+    <div><span>Arm / Disarm</span><kbd>Spasi</kbd></div>
+    <div><span>Gas / naik-turun</span><kbd>W</kbd> <kbd>S</kbd></div>
+    <div><span>Pitch maju/mundur</span><kbd>↑</kbd> <kbd>↓</kbd></div>
+    <div><span>Roll kiri/kanan</span><kbd>←</kbd> <kbd>→</kbd></div>
+    <div><span>Yaw kiri/kanan</span><kbd>A</kbd> <kbd>D</kbd></div>
+    <div><span>Mode Stabilize / Alt Hold</span><kbd>M</kbd></div>
+    <div><span>Angin</span><kbd>G</kbd></div>
+    <div><span>Kamera ikut / bebas</span><kbd>C</kbd></div>
+    <div><span>Jeda</span><kbd>P</kbd></div>
+    <div><span>Reset</span><kbd>R</kbd></div>
+  </div>
+  <div class="p" id="mot"></div>
+  <div class="p" id="hint">Klik area simulasi, lalu tekan <kbd>Spasi</kbd> untuk arm<br>dan <kbd>W</kbd> untuk lepas landas</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
